@@ -1,0 +1,17 @@
+# Hugo build output
+public/
+resources/
+
+# Hugo lock file
+.hugo_build.lock
+
+# Installer packages
+*.deb
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Fonts — self-hosted, not committed (see README.md)
+static/fonts/
