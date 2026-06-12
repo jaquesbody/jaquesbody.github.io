@@ -1,21 +1,138 @@
 {{ define "main" }}
-    <header>
-        <h1>{{ .Title }}</h1>
-        <p class="subtitle">{{ .Params.subtitle }}</p>
-    </header>
 
-    <section id="projects">
-        <h2 class="section-title">Selected Projects</h2>
-        <div class="project-grid">
-            {{ range .Site.RegularPages }}
-                {{ if eq .Section "projects" }}
-                <article class="project-card">
-                    <h3>{{ .Title }}</h3>
-                    <p>{{ .Params.description }}</p>
-                    <a href="{{ .Permalink }}" class="btn">View Details →</a>
-                </article>
-                {{ end }}
-            {{ end }}
+<!-- Hero -->
+<section class="hero">
+  <div class="container container--narrow">
+    <h1 class="hero-headline">I build <span class="hero-accent">privacy-first</span> tools for <span class="hero-accent">non-tech people</span>.</h1>  </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-label">
+      <span>Projects</span>
+    </div>
+    <div class="project-grid">
+
+      <!-- Untold — live -->
+      <article class="project-card surface shadow-subtle">
+        <div class="project-card__header">
+          <span class="project-card__name">Untold</span>
+          <span class="project-card__status project-card__status--live">Live</span>
         </div>
-    </section>
+        <p class="project-card__desc">A PWA guiding users through practical privacy improvements, from DNS to tackling big tech.</p>
+        <div class="project-card__footer">
+          <a href="/onlineprivacyguide" class="btn-ghost" target="_blank" rel="noopener noreferrer">View project</a>
+          <span class="project-card__note text-xs">Rebuild in progress</span>
+        </div>
+      </article>
+
+      <!-- Soul — future -->
+      <article class="project-card surface shadow-subtle">
+        <div class="project-card__header">
+          <span class="project-card__name">Soul</span>
+          <span class="project-card__status project-card__status--wip">In progress</span>
+        </div>
+        <p class="project-card__desc">How I have set up my AI to maximise quality output.</p>
+        <div class="project-card__footer">
+          <a href="/soul" class="btn-ghost">View project</a>
+          <span class="project-card__note text-xs">Under construction</span>
+        </div>
+      </article>
+      
+      <!-- Saved — live (unpublished) -->
+      <article class="project-card surface shadow-subtle">
+        <div class="project-card__header">
+          <span class="project-card__name">Saved</span>
+          <span class="project-card__status project-card__status--wip">In progress</span>
+        </div>
+        <p class="project-card__desc">Easily store, track and save on your household bills.</p>
+        <div class="project-card__footer">
+          <span class="project-card__note text-xs">Under construction</span>
+        </div>
+      </article>
+
+      <!-- AI Hub — future -->
+      <article class="project-card surface shadow-subtle">
+        <div class="project-card__header">
+          <span class="project-card__name">AI Hub</span>
+          <span class="project-card__status project-card__status--future">Planned</span>
+        </div>
+        <p class="project-card__desc">Local-first AI infrastructure running on Raspberry Pi 5, designed for privacy and convenience.</p>
+        <div class="project-card__footer">
+          <span class="project-card__note text-xs">Coming soon</span>
+        </div>
+      </article>
+
+      <!-- Reach — future -->
+      <article class="project-card surface shadow-subtle">
+        <div class="project-card__header">
+          <span class="project-card__name">Reach</span>
+          <span class="project-card__status project-card__status--future">Planned</span>
+        </div>
+        <p class="project-card__desc">Connecting ideas and creating knowledge.</p>
+        <div class="project-card__footer">
+          <span class="project-card__note text-xs">Coming soon</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container container--narrow">
+    <div class="section-label">
+      <span>Contact</span>
+    </div>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <span class="contact-label text-sm">X</span>
+        <a href="https://x.com/jaquesbody" class="contact-link" target="_blank" rel="noopener noreferrer">@jaquesbody</a>
+      </li>
+      <li class="contact-item">
+        <span class="contact-label text-sm">Nostr</span>
+        <div class="contact-item__group">
+          <a href="https://yakihonne.com/profile/nprofile1qqsf2dn25lxa5fva9vvr28ppxzdalpmms7069mzc7922guy49c5je6q08qmyd" class="contact-link" target="_blank" rel="noopener noreferrer">@jaquesbody</a>
+          <div class="key-row">
+            <span class="contact-key-label">pubkey:</span>
+            <div class="key-value-row">
+              <span class="contact-key">npub1j5mx4f7dmgje62ccx5wzzvymm7rhhpul5tk93u2553cf2t3f9n5qva89ur</span>
+              <button class="copy-btn" aria-label="Copy npub" data-copy="npub1j5mx4f7dmgje62ccx5wzzvymm7rhhpul5tk93u2553cf2t3f9n5qva89ur">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="contact-item">
+        <span class="contact-label text-sm">GitHub</span>
+        <a href="https://github.com/jaquesbody" class="contact-link" target="_blank" rel="noopener noreferrer">@jaquesbody</a>
+      </li>
+      <li class="contact-item">
+        <span class="contact-label text-sm">Email</span>
+        <div class="contact-item__group">
+          <a href="mailto:jaquesbody@proton.me" class="contact-link">jaquesbody@proton.me</a>
+          <div class="key-row">
+            <span class="contact-key-label">PGP key:</span>
+            <div class="key-value-row">
+              <span class="contact-key">e2ce45f4c43d90c508ed0cf8f98e3f87b0b8e12b</span>
+              <button class="copy-btn" aria-label="Copy PGP key" data-copy="e2ce45f4c43d90c508ed0cf8f98e3f87b0b8e12b">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 {{ end }}
