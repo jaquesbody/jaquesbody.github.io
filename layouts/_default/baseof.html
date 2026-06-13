@@ -34,6 +34,12 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+
+    <!-- Footer icons: X is 24x24 (clean). Nostr is 22x22 workaround — viewBox offset
+     (52 47 160 160) needs Inkscape fix (fit page to drawing, re-export Plain SVG).
+     GitHub is 28x28 workaround — path weights render too thin at 24x24.
+     All three need normalising to a consistent size in Phase 2. -->
+
   <footer class="site-footer">
     <div class="footer-inner">
       <a href="/" class="site-logo" aria-label="jaquesbody home">
@@ -48,21 +54,21 @@
         </a>
         <!-- Nostr -->
         <a href="https://yakihonne.com/profile/nprofile1qqsf2dn25lxa5fva9vvr28ppxzdalpmms7069mzc7922guy49c5je6q08qmyd" aria-label="Nostr" target="_blank" rel="noopener noreferrer">
-          <svg width="23" height="23" viewBox="52 47 160 160" fill="currentColor" aria-hidden="true">
+          <svg width="22" height="22" viewBox="52 47 160 160" fill="currentColor" aria-hidden="true">
             <path d="M210.8 199.4c0 3.1-2.5 5.7-5.7 5.7h-68c-3.1 0-5.7-2.5-5.7-5.7v-15.5c.3-19 2.3-37.2 6.5-45.5 2.5-5 6.7-7.7 11.5-9.1 9.1-2.7 24.9-.9 31.7-1.2 0 0 20.4.8 20.4-10.7s-9.1-8.6-9.1-8.6c-10 .3-17.7-.4-22.6-2.4-8.3-3.3-8.6-9.2-8.6-11.2-.4-23.1-34.5-25.9-64.5-20.1-32.8 6.2.4 53.3.4 116.1v8.4c0 3.1-2.6 5.6-5.7 5.6H57.7c-3.1 0-5.7-2.5-5.7-5.7v-144c0-3.1 2.5-5.7 5.7-5.7h31.7c3.1 0 5.7 2.5 5.7 5.7 0 4.7 5.2 7.2 9 4.5 11.4-8.2 26-12.5 42.4-12.5 36.6 0 64.4 21.4 64.4 68.7v83.2ZM150 99.3c0-6.7-5.4-12.1-12.1-12.1s-12.1 5.4-12.1 12.1 5.4 12.1 12.1 12.1S150 106 150 99.3Z"/>
           </svg>
         </a>
         <!-- GitHub -->
-        <a href="https://github.com/jaquesbody" aria-label="GitHub" target="_blank" rel="noopener noreferrer" style="padding: 1px;">
+        <a href="https://github.com/jaquesbody" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
           </svg>
         </a>
       </div>
-      <p class="text-sm" style="color: var(--text-secondary);">jaquesbody@proton.me</p>
+      <p class="text-sm text-secondary">jaquesbody@proton.me</p>
     </div>
     <div class="footer-copyright">
-      <p class="text-sm" style="color: var(--text-muted);">© {{ now.Year }} jaquesbody. Built with Hugo.</p>
+      <p class="text-sm text-secondary">© {{ now.Year }} jaquesbody. Built with Hugo.</p>
     </div>
   </footer>
   <script src="/js/main.js"></script>
