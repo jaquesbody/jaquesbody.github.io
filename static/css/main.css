@@ -134,7 +134,7 @@
 }
 
 html {
-  font-size: 100%; /* respects user browser font size preference */
+  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   scrollbar-gutter: stable;
 }
@@ -147,6 +147,7 @@ body {
   color:            var(--text-primary);
   background-color: var(--bg);
   min-height:       100vh;
+  scrollbar-gutter: stable;
 }
 
 img, svg, video {
