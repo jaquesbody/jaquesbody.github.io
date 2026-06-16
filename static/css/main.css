@@ -137,6 +137,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   scrollbar-gutter: stable;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -148,6 +149,7 @@ body {
   background-color: var(--bg);
   min-height:       100vh;
   scrollbar-gutter: stable;
+  scroll-padding-top: 5rem;
 }
 
 img, svg, video {
