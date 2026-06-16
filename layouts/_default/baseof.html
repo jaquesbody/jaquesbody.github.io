@@ -35,10 +35,10 @@
     {{ block "main" . }}{{ end }}
   </main>
 
-    <!-- Footer icons: X is 24x24 (clean). Nostr is 22x22 workaround — viewBox offset
-     (52 47 160 160) needs Inkscape fix (fit page to drawing, re-export Plain SVG).
-     GitHub is 28x28 workaround — path weights render too thin at 24x24.
-     All three need normalising to a consistent size in Phase 2. -->
+    <!-- Footer icons: X is 24x24 (clean). Nostr is 22x22 — viewBox fixed
+     in Inkscape (path coordinates transformed to 0,0 origin, June 2026),
+     rendered at 22x22 for optical size match with X.
+     GitHub is 28x28 — path weights render too thin at 24x24. -->
 
   <footer class="site-footer">
     <div class="footer-inner">
@@ -54,8 +54,8 @@
         </a>
         <!-- Nostr -->
         <a href="https://yakihonne.com/profile/nprofile1qqsf2dn25lxa5fva9vvr28ppxzdalpmms7069mzc7922guy49c5je6q08qmyd" aria-label="Nostr" target="_blank" rel="noopener noreferrer">
-          <svg width="22" height="22" viewBox="52 47 160 160" fill="currentColor" aria-hidden="true">
-            <path d="M210.8 199.4c0 3.1-2.5 5.7-5.7 5.7h-68c-3.1 0-5.7-2.5-5.7-5.7v-15.5c.3-19 2.3-37.2 6.5-45.5 2.5-5 6.7-7.7 11.5-9.1 9.1-2.7 24.9-.9 31.7-1.2 0 0 20.4.8 20.4-10.7s-9.1-8.6-9.1-8.6c-10 .3-17.7-.4-22.6-2.4-8.3-3.3-8.6-9.2-8.6-11.2-.4-23.1-34.5-25.9-64.5-20.1-32.8 6.2.4 53.3.4 116.1v8.4c0 3.1-2.6 5.6-5.7 5.6H57.7c-3.1 0-5.7-2.5-5.7-5.7v-144c0-3.1 2.5-5.7 5.7-5.7h31.7c3.1 0 5.7 2.5 5.7 5.7 0 4.7 5.2 7.2 9 4.5 11.4-8.2 26-12.5 42.4-12.5 36.6 0 64.4 21.4 64.4 68.7v83.2ZM150 99.3c0-6.7-5.4-12.1-12.1-12.1s-12.1 5.4-12.1 12.1 5.4 12.1 12.1 12.1S150 106 150 99.3Z"/>
+          <svg width="22" height="22" viewBox="0 0 158.9 157.7" fill="currentColor" aria-hidden="true">
+            <path d="m 158.8,151.9 c 0,3.1 -2.5,5.7 -5.7,5.7 h -68 c -3.1,0 -5.7,-2.5 -5.7,-5.7 v -15.5 c 0.3,-19 2.3,-37.2 6.5,-45.5 2.5,-5 6.7,-7.7 11.5,-9.1 9.1,-2.7 24.9,-0.9 31.7,-1.2 0,0 20.4,0.8 20.4,-10.7 0,-11.5 -9.1,-8.6 -9.1,-8.6 -10,0.3 -17.7,-0.4 -22.6,-2.4 -8.3,-3.3 -8.6,-9.2 -8.6,-11.2 -0.4,-23.1 -34.5,-25.9 -64.5,-20.1 -32.8,6.2 0.4,53.3 0.4,116.1 v 8.4 c 0,3.1 -2.6,5.6 -5.7,5.6 H 5.7 C 2.6,157.7 0,155.2 0,152 V 8 C 0,4.9 2.5,2.3 5.7,2.3 h 31.7 c 3.1,0 5.7,2.5 5.7,5.7 0,4.7 5.2,7.2 9,4.5 C 63.5,4.3 78.1,0 94.5,0 c 36.6,0 64.4,21.4 64.4,68.7 v 83.2 z M 98,51.8 c 0,-6.7 -5.4,-12.1 -12.1,-12.1 -6.7,0 -12.1,5.4 -12.1,12.1 0,6.7 5.4,12.1 12.1,12.1 6.7,0 12.1,-5.4 12.1,-12.1 z"/>
           </svg>
         </a>
         <!-- GitHub -->
