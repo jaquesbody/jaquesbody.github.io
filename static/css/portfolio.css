@@ -5,4 +5,246 @@
 
 .site-header {
   border-bottom: 1px solid var(--border);
-}   
+}
+
+.site-nav a {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  transition: color 150ms ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding-block: var(--space-6) var(--space-4);
+}
+
+.hero-accent {
+  font-weight: var(--weight-bold);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 8px;
+  text-underline-offset: 4px;
+}
+
+.hero-headline {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-heading);
+  color: var(--text-primary);
+  max-width: 36rem;
+}
+
+/* Projects section */
+.projects {
+  padding-block: var(--space-8);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.section-label span {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.section-label::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: var(--border);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
+}
+
+.project-card__name {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--text-primary);
+}
+
+.project-card__status {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px var(--space-1);
+  border-radius: var(--radius-sm);
+}
+
+.project-card__status--live {
+  color: var(--accent);
+  background-color: var(--accent-muted);
+}
+
+.project-card__status--wip {
+  color: var(--text-secondary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+}
+
+.project-card__status--future {
+  color: var(--text-secondary);
+  background-color: transparent;
+  border: 1px solid var(--border);
+}
+
+.project-card__desc {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-body);
+  flex: 1;
+}
+
+.project-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.project-card__note {
+  color: var(--text-secondary);
+}
+
+/* Contact section */
+.contact {
+  padding-block: var(--space-8);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.contact-label {
+  color: var(--text-secondary);
+  min-width: 4rem;
+  padding-top: 2px;
+}
+
+
+/* -----------------------------------------------------------------------------
+   About page
+----------------------------------------------------------------------------- */
+
+.about {
+  padding-block: var(--space-8);
+}
+
+.about-body p {
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+/* Contact inline keys */
+.contact-item__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-key-label {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.contact-key {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  font-family: monospace;
+  word-break: break-all;
+  flex: 1;
+}
+
+.key-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.key-value-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: nowrap;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0;
+  transition: color 150ms ease;
+}
+
+.copy-btn:hover {
+  color: var(--accent);
+}
+
+.copy-btn.copied {
+  color: var(--accent);
+}
+
+.logo-mark {
+  height: 22px;
+  width: auto;
+  display: block;
+}
