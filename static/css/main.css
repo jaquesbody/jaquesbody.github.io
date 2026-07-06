@@ -355,7 +355,6 @@ small {
 /* Header */
 .site-header {
   padding-block: var(--space-3);
-  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   background-color: var(--bg);

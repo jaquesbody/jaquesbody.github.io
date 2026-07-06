@@ -1,0 +1,8 @@
+/* =============================================================================
+   jaquesbody portfolio — portfolio.css
+   Portfolio-specific overrides and components, layered on top of main.css
+   ============================================================================= */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}   
