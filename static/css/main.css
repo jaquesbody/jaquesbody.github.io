@@ -49,6 +49,7 @@
   --text-primary:     var(--color-black);
   --text-secondary:   var(--color-mid);
   --border:           #c2c2cc;
+  --color-white-pure: #ffffff;
 
   /* --- Accent --- */
   /* --accent is intentionally undefined here.                          */
