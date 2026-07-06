@@ -286,7 +286,7 @@ small {
   display:          inline-flex;
   align-items:      center;
   justify-content:  center;
-  gap:              var(--space-2);
+  gap:              var(--space-1);
   padding:          var(--space-1) var(--space-3);
   background-color: var(--accent);
   color:            var(--color-black);   /* dark text on accent — always */
@@ -664,4 +664,3 @@ small {
   text-underline-offset: 4px;
 }
 
-/* hook test */
