@@ -1,4 +1,4 @@
 ---
-title: AI Philosophy
+title: Soul
 layout: under-construction
 ---
