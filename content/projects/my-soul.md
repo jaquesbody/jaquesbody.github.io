@@ -1,5 +1,5 @@
 ---
-title: "Discover my soul.md"
+title: "Discover my AI philosophy"
 description: "See my soul.md, project.md, audit.md, and protocol.md - and how this increases my output and speeds up iterations."
 date: 2026-06-01
 ---
