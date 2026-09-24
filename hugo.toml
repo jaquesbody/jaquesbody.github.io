@@ -1,3 +1,6 @@
 baseURL = "https://jaquesbody.github.io/"
 languageCode = "en-us"
 title = "Jaquesbody Portfolio"
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown (e.g. <video> on project pages)

@@ -188,6 +188,22 @@
   margin-bottom: var(--space-3);
 }
 
+/* Lists on about-layout pages (global style strips markers) */
+.about-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: var(--space-3);
+}
+
+.about-body li {
+  margin-bottom: 0.3em;
+}
+
+/* Full-width media with breathing room */
+.about-body video {
+  margin-bottom: var(--space-3);
+}
+
 /* Contact inline keys */
 .contact-item__group {
   display: flex;
