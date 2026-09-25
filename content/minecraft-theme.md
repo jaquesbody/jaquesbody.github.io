@@ -27,15 +27,15 @@ A switchable [Omarchy](https://omarchy.org) theme plus a suite of Minecraft-styl
 
 ## Screenshots
 
-![HUD with hotbar, hearts and XP bar](/projects/minecraft/screenshot-hud.png)
+![HUD over a sunset village with hotbar, hearts, XP bar and Steve](/projects/minecraft/screenshot-hud.png)
 
-![Inventory with armor, craft wells and app grid](/projects/minecraft/screenshot-inventory.png)
+![Inventory open over the game world](/projects/minecraft/screenshot-inventory.png)
+
+![Hotbar close-up with hearts, XP bar and the Wi-Fi battery widget](/projects/minecraft/screenshot-hotbar.png)
+
+![Inventory detail with craft row, app suggestions and Obsidian tooltip](/projects/minecraft/screenshot-inventory-detail.png)
 
 ![Inventory Apps tab with pixel icons](/projects/minecraft/screenshot-inventory-apps.png)
-
-![Inventory with Steve sneak tooltip](/projects/minecraft/screenshot-steve-tooltip.png)
-
-![Inventory detail with armor progress and fun fact](/projects/minecraft/screenshot-inventory-detail.png)
 
 ## Keybinds
 
