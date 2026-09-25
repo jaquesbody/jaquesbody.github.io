@@ -17,6 +17,7 @@ A local-first finance tracker — spending, bills and savings in one dark, tidy 
 - **Bills Due** — due dates with overdue highlighting; mark one as paid and it moves into spend
 - **Savings** — goals with progress against target
 - **Reports** — spending and bills broken down by category
+- **Receipt OCR** — snap or upload a receipt (image or PDF) on the Spend or Bills form and the app pre-fills the title and amount for you to confirm
 - **Export / import** — your whole dataset as JSON (desktop and browser)
 - Sample data seeds on first run so the app isn't empty
 
@@ -45,7 +46,7 @@ python3 -m http.server --directory docs
 
 ### Android
 
-[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/main/sorted-v2-2.0.0-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
+[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/main/sorted-v2-2.0.1-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
 
 ## Tech
 
