@@ -14,11 +14,12 @@ A local-first finance tracker — spending, bills and savings in one dark, tidy 
 
 - **Dashboard** — spent this month, bills due, savings progress and a 6-month trend chart, all at a glance
 - **Spend** — itemised list with month navigation, status filters (all / confirmed / pending / recurring) and one-tap confirm
-- **Bills Due** — due dates with overdue highlighting; mark one as paid and it moves into spend
+- **Bills Due** — due dates with overdue highlighting; mark one as paid and it moves into spend, with recurring bills rolling forward a month
 - **Savings** — goals with progress against target
-- **Reports** — spending and bills broken down by category
+- **Reports** — spending and bills broken down by category, scoped to all time, this month or this year
 - **Receipt OCR** — snap or upload a receipt (image or PDF) on the Spend or Bills form and the app pre-fills the title and amount for you to confirm
-- **Export / import** — your whole dataset as JSON (desktop and browser)
+- **Export / import** — your whole dataset as JSON, merging or replacing what you already have
+- Runs in the browser, on the desktop as an Electron app, and on Android — where the six destinations sit in a bottom bar instead of a side rail
 - Sample data seeds on first run so the app isn't empty
 
 ## Screenshots
@@ -46,7 +47,7 @@ python3 -m http.server --directory docs
 
 ### Android
 
-[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/main/sorted-v2-2.0.3-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
+[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/main/sorted-v2-2.0.4-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
 
 ## Tech
 
