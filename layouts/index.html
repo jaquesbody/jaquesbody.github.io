@@ -50,7 +50,20 @@
         <div class="project-card__footer">
           <a href="/sorted" class="btn-ghost" target="_blank" rel="noopener noreferrer">Launch</a>
           <a href="/projects/sorted" class="btn-ghost">Read more</a>
-          <span class="project-card__note text-xs">v2.94.3</span>
+          <!-- Icon alone, no label: the card is four words wide already and
+               "Download" is the one word that needs no reading. The releases
+               page is the stable address — /releases/latest follows the newest
+               tag, so nothing on this card has to be edited per release. -->
+          <a href="https://github.com/jaquesbody/sorted/releases/latest"
+             class="btn-ghost" target="_blank" rel="noopener noreferrer"
+             aria-label="Download Sorted for Android" title="Download the Android APK">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" x2="12" y1="15" y2="3"/>
+            </svg>
+          </a>
         </div>
       </article>
 

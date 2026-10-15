@@ -49,7 +49,7 @@ python3 -m http.server --directory docs
 
 ### Android
 
-[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/notifications/sorted-v2-2.94.3-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK). A new install starts empty and says what it does with your data, once, on the first screen.
+[Download the Android APK →](https://github.com/jaquesbody/sorted/releases/latest) and sideload it — the same app in a WebView, fully offline, data on your phone. A new install starts empty and says what it does with your data, once, on the first screen. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
 
 ## Tech
 
