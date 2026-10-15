@@ -12,21 +12,23 @@ A local-first finance tracker — spending, bills and savings in one dark, tidy 
 
 ## What you get
 
-- **Dashboard** — spent this month, bills due, savings progress and a 6-month trend chart, all at a glance
-- **Spend** — itemised list with month navigation, status filters (all / confirmed / pending / recurring) and one-tap confirm
-- **Bills Due** — due dates with overdue highlighting; mark one as paid and it moves into spend, with recurring bills rolling forward a month
-- **Savings** — goals with progress against target
-- **Reports** — spending and bills broken down by category, scoped to all time, this month or this year
-- **Receipt OCR** — snap or upload a receipt (image or PDF) on the Spend or Bills form and the app pre-fills the title and amount for you to confirm
-- **Export / import** — your whole dataset as JSON, merging or replacing what you already have
+- **Dashboard** — total money, what went where, bills due and savings progress for the month, plus a 6-month trend chart
+- **Spend** — itemised list with month navigation and status filters (all / confirmed / pending); the tick is what says the money has actually gone
+- **Bills Due** — due dates with overdue highlighting; mark one as paid and it stays in the list with the date you paid it, recurring bills rolling forward a month
+- **Savings** — accounts with balances, income, and goals with progress against target
+- **Reports** — spending, bills and savings by category, a forecast, and who spent what, scoped to all time, this month or this year
+- **Receipt OCR** — snap or upload a receipt (image or PDF) on the Spend or Bills form and the app pre-fills the title, amount and date for you to confirm
+- **People** — tag spend, bills and goals as somebody's and switch who's using the app; attribution on a shared device, not a login
+- **Export / import** — your whole dataset as JSON, CSV, text or a PDF
 - Runs in the browser, on the desktop as an Electron app, and on Android — where the six destinations sit in a bottom bar instead of a side rail
-- Sample data seeds on first run so the app isn't empty
 
 ## Screenshots
 
-![Sorted dashboard with this month's spend, bills due, savings progress and the monthly trend chart](/projects/sorted/dashboard.png)
+![Sorted dashboard with total money, what went where, this month's bills and savings, and the monthly trend chart](/projects/sorted/dashboard.png)
 
-![Spend list for August 2026 with month navigation, filter chips and confirmed items](/projects/sorted/spend.png)
+![Bills — paid and upcoming, each counting down to its date](/projects/sorted/bills.png)
+
+![Spend list with month navigation, filter chips, and the tick that says the money has gone](/projects/sorted/spend.png)
 
 ## Run it
 
@@ -47,7 +49,7 @@ python3 -m http.server --directory docs
 
 ### Android
 
-[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/main/sorted-v2-2.0.4-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK).
+[Download the debug APK →](https://github.com/jaquesbody/sorted/raw/notifications/sorted-v2-2.94.3-debug.apk) and sideload it — the same app in a WebView, fully offline, data on your phone. Rebuild with `npx cap sync android && cd android && ./gradlew assembleDebug` (needs JDK 21 and the Android SDK). A new install starts empty and says what it does with your data, once, on the first screen.
 
 ## Tech
 
