@@ -333,12 +333,15 @@ small {
 
 /* .btn-ghost is sized for the hero, where a button sits on its own line and
    1.5rem either side of the words is room. In a card footer the buttons share
-   one row with each other and a status note, so the same padding ran the last
-   one off the edge — Sorted's download button arrived as an icon and "Read more"
-   finished up squashed against it. The words want less, not the box less. */
+   one row with each other, so the same padding ran them past the edge —
+   Sorted's download button arrived as an icon and "Read more" finished up
+   squashed against it, then its label wrapping to two lines because the row
+   had shrunk it. 0.5rem either side, and flex-shrink off so a button can never
+   be squeezed into wrapping its own words again. */
 .project-card__footer .btn-ghost {
-  padding-left: var(--space-2);
-  padding-right: var(--space-2);
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
+  flex-shrink: 0;
 }
 
 /* -----------------------------------------------------------------------------

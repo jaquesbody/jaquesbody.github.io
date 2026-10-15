@@ -141,7 +141,10 @@
 .project-card__footer {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  /* var(--space-1), not var(--space-2): with three buttons in one row the
+     16px gaps were a third of the budget. 8px still reads as separation and
+     leaves the row what it needs. */
+  gap: var(--space-1);
   margin-top: auto;
 }
 
