@@ -328,6 +328,20 @@ small {
 }
 
 /* -----------------------------------------------------------------------------
+   Project cards
+----------------------------------------------------------------------------- */
+
+/* .btn-ghost is sized for the hero, where a button sits on its own line and
+   1.5rem either side of the words is room. In a card footer the buttons share
+   one row with each other and a status note, so the same padding ran the last
+   one off the edge — Sorted's download button arrived as an icon and "Read more"
+   finished up squashed against it. The words want less, not the box less. */
+.project-card__footer .btn-ghost {
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+/* -----------------------------------------------------------------------------
    Under construction
 ----------------------------------------------------------------------------- */
 
