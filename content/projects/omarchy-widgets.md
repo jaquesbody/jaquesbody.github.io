@@ -8,10 +8,14 @@ description: Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL
 
 Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Omalauncher](https://github.com/SimonSchubert/omalauncher) widget store, an Android launcher that runs Arch Linux.
 
+<div class="widget-sections">
 <details class="widget-section">
 <summary>
-  <span class="widget-section__title">TIMESHEET</span>
-  <span class="widget-section__sub">record when you work, track your holidays and time you accrue</span>
+  <img class="widget-section__thumb" src="/projects/omarchy-widgets/timesheet-widget.jpg" alt="Timesheet widget preview">
+  <span class="widget-section__text">
+    <span class="widget-section__title">TIMESHEET</span>
+    <span class="widget-section__sub">record when you work, track your holidays and time you accrue</span>
+  </span>
 </summary>
 
 - Visually track and save to file as you go. See if you are accruing time (and holidays) over the weeks, even project the week ahead. While importantly saving documented accurate working hours, including optional Saturday and Sunday tracking.
@@ -28,8 +32,11 @@ Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Oma
 
 <details class="widget-section">
 <summary>
-  <span class="widget-section__title">opencode burn</span>
-  <span class="widget-section__sub">at a glance see how your opencode usage is going across multiple devices</span>
+  <img class="widget-section__thumb" src="/projects/omarchy-widgets/opencode-burn-widget.jpg" alt="opencode burn widget preview">
+  <span class="widget-section__text">
+    <span class="widget-section__title">opencode burn</span>
+    <span class="widget-section__sub">at a glance see how your opencode usage is going across multiple devices</span>
+  </span>
 </summary>
 
 - Easily see how close you are to running out of opencode requests, both Overall model requests or per 5hr limits.
@@ -44,6 +51,7 @@ Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Oma
 </div>
 
 </details>
+</div>
 
 ## Download Omalauncher
 

@@ -208,22 +208,63 @@
 }
 
 /* Collapsible widget sections on project pages */
+.about-body .widget-sections {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+/* With one card open, natural heights read better than stretching the
+   closed card to match the expanded one. */
+.about-body .widget-sections:has(.widget-section[open]) {
+  display: block;
+}
+
+.about-body .widget-sections:has(.widget-section[open]) .widget-section + .widget-section {
+  margin-top: var(--space-2);
+}
+
 .about-body .widget-section {
   background-color: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  margin-bottom: var(--space-2);
   padding: 0 var(--space-3);
 }
 
 .about-body .widget-section summary {
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
+  gap: var(--space-2);
+  height: 100%;
+  box-sizing: border-box;
   padding: var(--space-2) var(--space-4) var(--space-2) 0;
   cursor: pointer;
   list-style: none;
+}
+
+.about-body .widget-section summary::marker {
+  content: '';
+}
+
+/* Fixed square thumbnail: same image height on every card. */
+.about-body .widget-section__thumb {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.widget-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
 }
 
 .about-body .widget-section summary::-webkit-details-marker {
