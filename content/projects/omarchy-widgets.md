@@ -1,35 +1,51 @@
 ---
-title: Omarchy widgets
+title: Omarchy Widgets
 layout: about
-description: Home-screen widgets for omarchy-proot, written in OWL — the widget store for Omalauncher.
+description: Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the Omalauncher widget store, an Android launcher that runs Arch Linux.
 ---
 
-# Omarchy widgets
+# Omarchy Widgets
 
-[Omarchy widgets](https://github.com/jaquesbody/omarchy-widgets) is my fork of [Simon Schubert's omarchy-widgets](https://github.com/SimonSchubert/omarchy-widgets) — the widget store for [Omalauncher](https://github.com/SimonSchubert/omalauncher), the Android launcher that runs Arch Linux and draws home-screen widgets written in **OWL**, a small declarative widget language. It also holds OWL faces, whole home pages, and OWL apps: full-screen views that open from the app drawer instead of sitting on a page.
+Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Omalauncher](https://github.com/SimonSchubert/omalauncher) widget store, an Android launcher that runs Arch Linux.
 
-Omalauncher is "a personal OS that criticises ideas, suggests new directions and dynamically organises all your loose ends into a logical todo list."
+<details class="widget-section">
+<summary>
+  <span class="widget-section__title">TIMESHEET</span>
+  <span class="widget-section__sub">record when you work, track your holidays and time you accrue</span>
+</summary>
 
-## What I've contributed
+- Visually track and save to file as you go. See if you are accruing time (and holidays) over the weeks, even project the week ahead. While importantly saving documented accurate working hours, including optional Saturday and Sunday tracking.
+- Easily clock in and out, set default start times, lunch breaks and finish times. Adjust timings on the homescreen widget or edit at a later date.
+- Simply set your normal working week, easily add Saturday and Sunday hours, factor in your lunch break and holiday allocation.
 
-<!-- Add your widgets here as they land, e.g.:
-- **widget-name** — short description. [PR #N](https://github.com/SimonSchubert/omarchy-widgets/pull/N)
--->
+<div class="widget-shots">
+  <img src="/projects/omarchy-widgets/timesheet-widget.jpg" alt="TIMESHEET widget showing hours worked, holiday balance and the projected week">
+  <img src="/projects/omarchy-widgets/timesheet-week.jpg" alt="TIMESHEET week view with editable start and finish times for each day">
+  <img src="/projects/omarchy-widgets/timesheet-settings.jpg" alt="TIMESHEET settings for the average week, lunch break and holiday allowance">
+</div>
 
-- _Widget list coming soon — drop names + PR links here as they merge._
+</details>
 
-## How the store works
+<details class="widget-section">
+<summary>
+  <span class="widget-section__title">opencode burn</span>
+  <span class="widget-section__sub">at a glance see how your opencode usage is going across multiple devices</span>
+</summary>
 
-Everything in `widgets/`, `faces/` and `apps/` is reviewed. When a pull request is merged, CI builds `index.json` (widgets), `faces.json` (faces) and `apps.json` (apps) and publishes the store to GitHub Pages, where the launcher's **store** reads them. Before installing, it shows you every command a widget or app runs and every package it installs, and it checks the download against the reviewed file's SHA-256.
+- Easily see how close you are to running out of opencode requests, both Overall model requests or per 5hr limits.
+- See your stats across multiple models and devices, all tracked and synced (Android and Omarchy OS only).
+- Get reminders, notifications and tips as to when to speed up, slow down, come back or jump to a different model.
 
-## Links
+<div class="widget-shots">
+  <img src="/projects/omarchy-widgets/opencode-burn-widget.jpg" alt="opencode burn widget showing 98% usage and a slow down prompt">
+  <img src="/projects/omarchy-widgets/opencode-burn-overview.jpg" alt="opencode burn overview with requests used, 5-hour limits and per-model usage">
+  <img src="/projects/omarchy-widgets/opencode-burn-devices.jpg" alt="opencode burn device pairing screen">
+  <img class="wide" src="/projects/omarchy-widgets/opencode-burn-desktop.png" alt="opencode burn widget on the Omarchy desktop bar">
+</div>
 
-- [My fork →](https://github.com/jaquesbody/omarchy-widgets)
-- [Upstream store →](https://github.com/SimonSchubert/omarchy-widgets) (by [@SimonSchubert](https://github.com/SimonSchubert))
-- [Omalauncher →](https://github.com/SimonSchubert/omalauncher)
-- [My pull requests →](https://github.com/SimonSchubert/omarchy-widgets/pulls?q=is%3Apr+author%3Ajaquesbody)
-- [My GitHub profile →](https://github.com/jaquesbody)
+</details>
 
-## Repo
+## Download Omalauncher
 
-Contributions are MIT-licensed in line with the upstream project. My own widget code lives in the pull requests linked above.
+- [Omalauncher on GitHub →](https://github.com/SimonSchubert/omalauncher)
+- [Omalauncher on Google Play →](https://play.google.com/store/apps/details?id=dev.omalauncher)
