@@ -22,6 +22,8 @@ Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Oma
 - Easily clock in and out, set default start times, lunch breaks and finish times. Adjust timings on the homescreen widget or edit at a later date.
 - Simply set your normal working week, easily add Saturday and Sunday hours, factor in your lunch break and holiday allocation.
 
+**Source:** [widgets/jaquesbody/timesheet on GitHub →](https://github.com/SimonSchubert/omarchy-widgets/tree/main/widgets/jaquesbody/timesheet)
+
 <div class="widget-shots">
   <img src="/projects/omarchy-widgets/timesheet-widget.jpg" alt="TIMESHEET widget showing hours worked, holiday balance and the projected week">
   <img src="/projects/omarchy-widgets/timesheet-week.jpg" alt="TIMESHEET week view with editable start and finish times for each day">
@@ -42,6 +44,8 @@ Clean, easy-to-use and helpful homescreen widgets, vibecoded in OWL for the [Oma
 - Easily see how close you are to running out of opencode requests, both Overall model requests or per 5hr limits.
 - See your stats across multiple models and devices, all tracked and synced (Android and Omarchy OS only).
 - Get reminders, notifications and tips as to when to speed up, slow down, come back or jump to a different model.
+
+**Source:** [widgets/jaquesbody/opencode-burn on GitHub →](https://github.com/SimonSchubert/omarchy-widgets/tree/main/widgets/jaquesbody/opencode-burn)
 
 <div class="widget-shots">
   <img src="/projects/omarchy-widgets/opencode-burn-widget.jpg" alt="opencode burn widget showing 98% usage and a slow down prompt">
